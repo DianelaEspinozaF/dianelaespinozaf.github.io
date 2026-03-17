@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walls That Cannot Wait – Dianela Espinoza</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #4a5568;
+            background-color: #f7fafc;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d3748 100%);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 { font-size: 2em; margin-bottom: 8px; max-width: 750px; margin: 0 auto 12px; }
+        header p { font-size: 1em; opacity: 0.8; }
+
+        /* NAV */
+        nav {
+            background: #2d3748;
+            padding: 12px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+            transition: color 0.2s;
+        }
+
+        nav a:hover { color: #90cdf4; }
+
+        /* ARTICLE LAYOUT */
+        .article-container {
+            max-width: 720px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        /* METADATA */
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .meta-date {
+            font-size: 0.85em;
+            color: #a0aec0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #ebf8ff;
+            color: #2b6cb0;
+            font-size: 0.78em;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        /* ARTICLE BODY */
+        .article-body h2 {
+            font-size: 1.3em;
+            color: #2d3748;
+            margin: 36px 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .article-body p {
+            font-size: 1em;
+            color: #4a5568;
+            margin-bottom: 18px;
+        }
+
+        .article-body ul {
+            margin: 0 0 18px 20px;
+        }
+
+        .article-body ul li {
+            margin-bottom: 8px;
+            font-size: 1em;
+            color: #4a5568;
+        }
+
+        .article-body strong { color: #2d3748; }
+
+        /* PULL QUOTE */
+        blockquote {
+            border-left: 4px solid #1e3a5f;
+            background: #ebf8ff;
+            padding: 16px 20px;
+            margin: 28px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05em;
+            color: #2d3748;
+            font-style: italic;
+        }
+
+        /* BACK LINK */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 28px;
+            color: #1e3a5f;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .back-link:hover { color: #2b6cb0; }
+
+        /* SOURCES */
+        .sources {
+            background: white;
+            border-radius: 10px;
+            padding: 24px 28px;
+            margin-top: 48px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            font-size: 0.88em;
+            color: #718096;
+        }
+
+        .sources h3 {
+            font-size: 1em;
+            color: #2d3748;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .sources ul { margin-left: 18px; }
+        .sources ul li { margin-bottom: 6px; }
+
+        /* AUTHOR BOX */
+        .author-box {
+            background: white;
+            border-radius: 10px;
+            padding: 24px 28px;
+            margin-top: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .author-box img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-box h4 { font-size: 1em; color: #2d3748; margin-bottom: 4px; }
+        .author-box p { font-size: 0.88em; color: #718096; margin: 0; }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #2d3748;
+            color: #a0aec0;
+            font-size: 0.85em;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Walls That Cannot Wait: Peru's School Infrastructure Crisis Before the Election</h1>
+        <p>March 2026 · Policy Note</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../index.html#research">Research</a>
+        <a href="../index.html#contact">Contact</a>
+    </nav>
+
+    <div class="article-container">
+
+        <a href="../writing.html" class="back-link">← Back to Writing</a>
+
+        <div class="article-meta">
+            <span class="meta-date">March 2026</span>
+            <span class="tag">Education</span>
+            <span class="tag">Infrastructure</span>
+            <span class="tag">Peru</span>
+            <span class="tag">Policy</span>
+        </div>
+
+        <div class="article-body">
+
+            <h2>A Personal Journey Through Peru's Educational Inequality</h2>
+            <p>
+                In 2018, during my first year studying economics at the University of Piura, I heard Jaime Saavedra speak for the first time. In an extraordinary lecture, I realised the privilege I had in being able to study at that university — and once again, a former minister who truly knew our country put on the table the enormous challenges and deep inequalities in education. Having grown up in José Leonardo Ortiz, a district in Chiclayo where educational gaps are visible and painful, that encounter made me realise those gaps were far wider than I had previously understood. That day reaffirmed my commitment to working on education from wherever life placed me.
+            </p>
+
+            <h2>From Fieldwork to Frustration: When Policy Meets Bureaucracy</h2>
+            <p>
+                In 2021, in the middle of the pandemic, I worked at <strong>Innovations for Poverty Action (IPA)</strong>, where I contributed to an intervention aimed at closing gender gaps in STEM careers. Before leaving, I also worked on a project promoting <strong>intercultural bilingual education</strong> to strengthen both mathematics learning and cultural identity. It was there that I first encountered, firsthand, the weight of government bureaucracy — and how high-impact projects can simply disappear when political priorities shift.
+            </p>
+            <p>When the director of intercultural bilingual education changed, those programmes quietly faded away. This raises questions I cannot stop thinking about:</p>
+            <ul>
+                <li>Where is the commitment to policy continuity?</li>
+                <li>Who is thinking about the children who are no longer beneficiaries of these programmes?</li>
+                <li>What is the real cost — measured in lost learning and lost futures — of these interruptions?</li>
+            </ul>
+            <p>
+                The gap between what academia designs and what policy actually delivers is not just an institutional problem. It is a human one.
+            </p>
+
+            <h2>Knowing the Country Beyond Its Urban Centers</h2>
+            <p>
+                In 2022, I had the privilege of working on <strong>Young Lives</strong>, a longitudinal study that follows the life trajectories of students over 20 years. Working closely with outstanding professionals, I was, for the first time, able to truly know my country beyond my own urban district. Interacting with enumerators, listening to their experiences in the field, and meeting families and study participants — many of whom were nearly my age — was deeply humbling. These young people did not have the opportunities I had. Their life trajectories were shaped by circumstances entirely beyond their control.
+            </p>
+
+            <h2>The Crisis We Cannot Ignore: School Infrastructure in Peru Today</h2>
+            <p>
+                I am now completing my master's degree at the <strong>London School of Economics</strong>, and despite the thousands of kilometres between me and Peru, I cannot be indifferent to what is happening back home.
+            </p>
+            <p>
+                This week, students from public schools returned to class. But under <strong>what conditions</strong>? A recent report from <em>Punto Final</em> shows schools in Lima — our capital city — with crumbling walls, leaking roofs, inadequate sanitation, and classrooms unfit for learning. These are not only schools in remote rural areas. These are schools in Lima.
+            </p>
+            <p>
+                This is not a new problem, but it is an urgent one. Evidence from reforms such as <strong>extended school hours (Jornada Escolar Completa)</strong> consistently shows that infrastructure quality is directly linked to learning outcomes. You cannot extend the school day if the building itself is falling apart.
+            </p>
+
+            <blockquote>
+                What are these children supposed to learn in these conditions?
+            </blockquote>
+
+            <h2>An Electoral Moment We Cannot Waste</h2>
+            <p>
+                We need to make this visible — and we need to do it now, particularly because in less than a month, Peru faces a <strong>general election with around 38 presidential candidates</strong>. It is not enough to hear candidates say <em>"we will invest in education"</em> or <em>"education is our priority."</em> Those words cost nothing. The real questions are:
+            </p>
+            <ul>
+                <li><strong>How</strong> will they invest, and in what specifically?</li>
+                <li>Do they have a realistic, costed, and feasible plan for school infrastructure?</li>
+                <li>Who are the technical teams that would actually implement these plans?</li>
+                <li>Have these candidates held public office before — and what did they do, or fail to do, when they had the chance?</li>
+            </ul>
+            <p>
+                The reports from the <strong>Contraloría General de la República</strong> document in detail the current state of school infrastructure across the country. This is not opinion. This is the government's own audit body telling us the truth.
+            </p>
+
+            <h2>The Bridge We Still Need to Build</h2>
+            <p>
+                As Jaime Saavedra has written, the Peruvian state continues <em>llegando tarde</em> — arriving too late — for some children. In too many cases, it never arrives at all. The bridge between academia and policy implementation is not just feasible — it is <strong>necessary</strong>. But it requires political will, institutional continuity, and the courage to put children — not electoral cycles — at the centre of every decision.
+            </p>
+
+            <blockquote>
+                Please, pay attention to this. The children cannot wait.
+            </blockquote>
+
+        </div>
+
+        <!-- SOURCES -->
+        <div class="sources">
+            <h3>Sources & References</h3>
+            <ul>
+                <li>Punto Final — report on school infrastructure conditions, March 2026</li>
+                <li>Contraloría General de la República — school infrastructure audit reports</li>
+                <li>Young Lives longitudinal study — <a href="https://www.younglives.org.uk" target="_blank">younglives.org.uk</a></li>
+                <li>Saavedra, J. — referenced work on Peruvian education policy</li>
+                <li>Jornada Escolar Completa — evidence on infrastructure and learning outcomes</li>
+            </ul>
+        </div>
+
+        <!-- AUTHOR BOX -->
+        <div class="author-box">
+            <img src="../photo_github.png" alt="Dianela Espinoza">
+            <div>
+                <h4>Dianela Espinoza</h4>
+                <p>Economist from Chiclayo, Peru. MPA in Data Science for Public Policy at LSE. Former Research Assistant at GRADE (Young Lives) and IPA. Writing about education, inequality, and evidence-based policy.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Dianela Espinoza. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
