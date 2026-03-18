@@ -55,10 +55,12 @@ Bachelor's Degree in Economics. GPA: 17.34/20 (US GPA: 4.0). Rank: 5/45.
 ## Teaching Experience
 
 **University of Piura (UDEP)** — Teaching Assistant, 2019–2024
-- Development and Environment (Prof. Augusto Mendoza, Ph.D. PUCP)
-- Antitrust and Regulation (Prof. Sandro Navarro, Ph.D. University of Navarra)
-- Economic Optimization 1 (Prof. Edgar Santiani)
-- Statistics 1 (Prof. William Reyes, M.Sc. University of Alcala)
+- Development and Environment
+- Antitrust and Regulation 
+- Microeconomics
+- Short-term Macroeconomics,
+- Economic Optimization 1 
+- Statistics 1 
 
 ---
 
