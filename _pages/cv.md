@@ -42,10 +42,14 @@ Bachelor's Degree in Economics. GPA: 17.34/20 (US GPA: 4.0). Rank: 5/45.
 
 ## Publications
 
-<ul>{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
+- **¿Qué hemos aprendido del estudio longitudinal Niños del Milenio en el Perú? Nuevos hallazgos y desafíos pendientes (2018-2025)**
+  Cueto, S., Rojas, V., Espinoza, D., Campos, A., & Curi, K. (2025). Lima: GRADE.
 
+- **Education and Learning: Preliminary Findings from the 2023-24 Young Lives Survey (Round 7): Peru**
+  Cueto, S., & Espinoza, D. (2025). Young Lives Factsheet, University of Oxford.
+
+- **Growing JUNTOS: Long-Term Impacts of Peru's Conditional Cash Transfer Programme on Human Capital**
+  Espinoza, D., Woodman, A., & Sánchez, A. (under review). Economic Development and Cultural Change.
 ---
 
 ## Teaching Experience
