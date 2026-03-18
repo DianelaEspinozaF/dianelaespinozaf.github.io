@@ -83,9 +83,13 @@ Bachelor's Degree in Economics. GPA: 17.34/20 (US GPA: 4.0). Rank: 5/45.
 
 ---
 
-## Leadership & Volunteer Work
+## Fellowships
 
 - **Visiting Fellow** — Freedom and Prosperity Center, Atlantic Council
+
+---
+
+## Leadership & Volunteer Work
 - **Member, Labour Market Dimension** — ODES, Abstract Peru
 - **Data Analysis Team Leader** — Yachay Wasi (coordinated 1,126 volunteers across 11 regions)
 - **Secretary, Onboarding Team** — Peruvian Society at LSE (2025–2026)
