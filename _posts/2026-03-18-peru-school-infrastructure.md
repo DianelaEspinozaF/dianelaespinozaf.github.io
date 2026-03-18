@@ -1,5 +1,5 @@
 ---
-title: "Walls That Cannot Wait: Peru's School Infrastructure Crisis Before the Election"
+title: 'Walls That Cannot Wait: Peru School Infrastructure Crisis Before the Election'
 date: 2026-03-18
 permalink: /posts/2026/03/peru-school-infrastructure/
 tags:
