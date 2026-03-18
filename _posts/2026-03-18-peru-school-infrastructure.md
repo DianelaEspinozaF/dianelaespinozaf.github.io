@@ -54,7 +54,7 @@ The reports from the **Contraloría General de la República** document in detai
 
 ## The Bridge We Still Need to Build
 
-As Jaime Saavedra has written, the Peruvian state continues *llegando tarde* — arriving too late — for some children. In too many cases, it never arrives at all. The bridge between academia and policy implementation is not just feasible — it is **necessary**. But it requires political will, institutional continuity, and the courage to put children — not electoral cycles — at the centre of every decision.
+As Jaime Saavedra has written, the Peruvian state continues arriving too late for some children. In too many cases, it never arrives at all. The bridge between academia and policy implementation is not just feasible — it is **necessary**. But it requires political will, institutional continuity, and the courage to put children — not electoral cycles — at the centre of every decision.
 
 
 ---
