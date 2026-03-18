@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<a href="/files/Dianela_Espinoza_CV.pdf" class="btn btn--primary btn--large" download>📄 Download Full CV (PDF)</a>
+<a href="/files/Dianela_Espinoza_CV.pdf" class="btn btn--large" style="background-color: #2c3e7a; border-color: #2c3e7a; color: white;" download> Download Full CV (PDF)</a>
 
 ---
 
