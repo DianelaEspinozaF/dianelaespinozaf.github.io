@@ -6,7 +6,7 @@ permalink: /publication/2024-siep-conference
 excerpt: 'Presented preliminary results of the Growing JUNTOS working paper at the IX National Seminar organized by the Peruvian Society of Educational Research (SIEP), Tarapoto, 2024.'
 date: 2024-01-01
 venue: 'IX National Seminar, Peruvian Society of Educational Research (SIEP), Tarapoto'
-paperurl: ''
+#paperurl: ''
 citation: "Espinoza, D. (2024). Growing JUNTOS: Long-Term Impacts of Peru's Conditional Cash Transfer Programme on Human Capital. Presented at the IX National Seminar, Peruvian Society of Educational Research (SIEP), Tarapoto, Peru."
 ---
 
