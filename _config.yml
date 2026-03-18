@@ -60,7 +60,9 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
+  policy_briefs:
+    title: 'Policy Briefs'
   conferences:
     title: 'Conference Papers'
 
