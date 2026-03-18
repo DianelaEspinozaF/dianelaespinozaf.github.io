@@ -107,7 +107,6 @@
       "name": "Growing JUNTOS: Long-Term Impacts of Peru's Conditional Cash Transfer Programme on Human Capital",
       "publisher": "Under review at Economic Development and Cultural Change",
       "releaseDate": "2024",
-      "website": "",
       "summary": "With Amanda Woodman and Alan Sanchez (University of Oxford). Evaluates long-term impacts of JUNTOS on human capital and family formation using propensity score matching on 2,000+ Young Lives participants."
     },
     {
@@ -139,29 +138,25 @@
       "course": "Development and Environment",
       "institution": "University of Piura (UDEP)",
       "date": "2019-2024",
-      "role": "Teaching Assistant",
-      "description": "Prof. Augusto Mendoza, Ph.D. PUCP"
+      "role": "Teaching Assistant"
     },
     {
       "course": "Antitrust and Regulation",
       "institution": "University of Piura (UDEP)",
       "date": "2019-2024",
-      "role": "Teaching Assistant",
-      "description": "Prof. Sandro Navarro, Ph.D. University of Navarra"
+      "role": "Teaching Assistant"
     },
     {
       "course": "Economic Optimization 1",
       "institution": "University of Piura (UDEP)",
       "date": "2019-2024",
-      "role": "Teaching Assistant",
-      "description": "Prof. Edgar Santiani"
+      "role": "Teaching Assistant"
     },
     {
       "course": "Statistics 1",
       "institution": "University of Piura (UDEP)",
       "date": "2019-2024",
-      "role": "Teaching Assistant",
-      "description": "Prof. William Reyes, M.Sc. University of Alcala"
+      "role": "Teaching Assistant"
     }
   ]
 }
