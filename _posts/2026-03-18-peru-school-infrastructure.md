@@ -1,4 +1,3 @@
-
 ---
 title: "Walls That Cannot Wait: Peru's School Infrastructure Crisis Before the Election"
 date: 2026-03-18
@@ -9,7 +8,6 @@ tags:
   - infrastructure
   - policy
 ---
-
 As Peruvian students return to class, thousands face crumbling buildings, leaking roofs, and classrooms unfit for learning. With 38 presidential candidates on the ballot, the question is not whether they support education — it is whether they have a real plan.
 
 ## A Personal Journey Through Peru's Educational Inequality
