@@ -1,7 +1,7 @@
 ---
 title: "Education and Learning: Preliminary Findings from the 2023-24 Young Lives Survey (Round 7): Peru"
 collection: publications
-category: manuscripts
+category: policy_briefs
 permalink: /publication/2025-young-lives-factsheet
 excerpt: 'Policy brief presenting preliminary findings from Round 7 of the Young Lives Study in Peru, focusing on education and learning outcomes.'
 date: 2025-03-01
