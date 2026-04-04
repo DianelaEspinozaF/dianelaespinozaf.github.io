@@ -30,7 +30,7 @@ Two weeks after our conversation, Peruvian students returned to class. But not a
 
 I know this happens every year. That is exactly the problem — we have normalised this situation.
 
-A report by Punto Final showed schools with crumbling walls, leaking roofs, inadequate sanitation, broken chairs, and blackboards impossible to use. The photographs in that report stopped me (I included some of them here). My first thought was: how do we speak of a more equal country, with the same rights for everyone, when a right as basic as a dignified classroom is not guaranteed for all?
+A report by Punto Final showed schools with crumbling walls, leaking roofs, inadequate sanitation, broken chairs, and blackboards impossible to use. The photographs in that report stopped me (I included some of them at the end of this article). My first thought was: how do we speak of a more equal country, with the same rights for everyone, when a right as basic as a dignified classroom is not guaranteed for all?
 
 
 ## An Electoral Moment and a Collective Responsibility
