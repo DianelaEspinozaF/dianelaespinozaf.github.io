@@ -51,7 +51,7 @@ The scenario, honestly, feels disheartening. But in this week of electoral silen
 
 Closing the education gap is a political commitment that millions of children and young people are still waiting for. The government cannot keep arriving late for new generations.
 
----
+
 ## Photographs
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
@@ -61,7 +61,7 @@ Closing the education gap is a political commitment that millions of children an
   <img src="/images/colegio6.jpg" width="48%" alt="School conditions in Peru">
 </div>
 
----
+
 ## References
 
 Agüero, J., Favara, M., Porter, C., & Sánchez, A. (forthcoming). "Do More School Resources Increase Learning Outcomes? Evidence from a Comprehensive Education Reform in Peruvian Secondary Schools." *Journal of Human Resources*. Available at: [LINK AL PAPER]
