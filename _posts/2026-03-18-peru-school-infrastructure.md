@@ -1,6 +1,6 @@
 ---
-title: 'Walls That Cannot Wait: Peru School Infrastructure Crisis Before the Election'
-date: 2026-03-18
+title: 'Walls That Cannot Wait: Infrastructure, Reform, and the Future of Peruvian Education'
+date: 2026-04-04
 permalink: /posts/2026/03/peru-school-infrastructure/
 tags:
   - education
@@ -9,53 +9,63 @@ tags:
   - policy
 ---
 
-As Peruvian students return to class, thousands face crumbling buildings, leaking roofs, and classrooms unfit for learning. With 38 presidential candidates on the ballot, the question is not whether they support education — it is whether they have a real plan.
+One month ago, I had the privilege of coordinating a conversation at the London School of Economics that brought together two of the most rigorous and committed voices on Peruvian education: Dr. Jaime Saavedra and Dr. Alan Sanchez. Bridging academia and public policy is rarely easy, but that day it felt not only possible but necessary. After a hectic week and the end of Winter Term, I decided to write about what we discussed, because the ideas that emerged from that room deserve to travel further.
 
-## A Personal Journey Through Peru's Educational Inequality
+## The LSE Conversation: AI, Reform, and the Conditions That Make Both Possible
 
-In 2018, during my first year studying economics at the University of Piura, I heard Jaime Saavedra speak for the first time. In an extraordinary lecture, I realised the privilege I had in being able to study at that university — and once again, a former minister who truly knew our country put on the table the enormous challenges and deep inequalities in education. Having grown up in José Leonardo Ortiz, a district in Chiclayo where educational gaps are visible and painful, that encounter made me realise those gaps were far wider than I had previously understood. That day reaffirmed my commitment to working on education from wherever life placed me.
+When I began thinking about what topics would be most relevant to address at the LSE event, one idea surfaced immediately: the role of artificial intelligence in learning gaps. It is impossible to discuss the future of education today without confronting this question. But confronting it seriously requires honesty about the ground conditions.
 
-## From Fieldwork to Frustration: When Policy Meets Bureaucracy
+One of the central questions that day was: how do we incorporate AI into classrooms in a way that everyone can access it? In the case of Peru, this is a profound challenge. We have a wide education gap, with poor quality access in rural areas and in the peripheries of large cities like Lima. As Dr. Saavedra stated clearly: if AI is not implemented correctly, it will not close existing inequalities, it will deepen them.
 
-In 2021, in the middle of the pandemic, I worked at **Innovations for Poverty Action (IPA)**, where I contributed to an intervention aimed at closing gender gaps in STEM careers. Before leaving, I also worked on a project promoting **intercultural bilingual education** to strengthen both mathematics learning and cultural identity. It was there that I first encountered, firsthand, the weight of government bureaucracy — and how high-impact projects can simply disappear when political priorities shift.
+Dr. Alan Sanchez presented findings from his research on the Jornada Escolar Completa (JEC) reform on learning outcomes. The JEC reform was first implemented in 2015, when Jaime Saavedra was Minister of Education. Expansion continued in 2016 and 2017. After that, no more public schools were incorporated into the programme.
 
-When the director of intercultural bilingual education changed, those programmes quietly faded away. This raises questions I cannot stop thinking about:
+What does JEC offer? An increase in instructional hours in mathematics, reading, and English; expanded teacher support and monitoring; and psychological support for students. The evidence confirms that extending the school day works when it is accompanied by complementary interventions.
 
-- Where is the commitment to policy continuity?
-- Who is thinking about the children who are no longer beneficiaries of these programmes?
-- What is the real cost — measured in lost learning and lost futures — of these interruptions?
+I want to highlight JEC precisely because of what it reveals about sequencing. If we are serious about developing an education system where AI plays a meaningful role in closing learning gaps, we must first ensure that all schools have the basic conditions for any reform to be implemented at all.
 
-The gap between what academia designs and what policy actually delivers is not just an institutional problem. It is a human one.
 
-## Knowing the Country Beyond Its Urban Centers
+## The Crisis We Have Normalised
 
-In 2022, I had the privilege of working on **Young Lives**, a longitudinal study that follows the life trajectories of students over 20 years. Working closely with outstanding professionals, I was, for the first time, able to truly know my country beyond my own urban district. Interacting with enumerators, listening to their experiences in the field, and meeting families and study participants — many of whom were nearly my age — was deeply humbling. These young people did not have the opportunities I had. Their life trajectories were shaped by circumstances entirely beyond their control.
+Two weeks after our conversation, Peruvian students returned to class. But not all schools were ready to receive them. 
 
-## The Crisis We Cannot Ignore: School Infrastructure in Peru Today
+I know this happens every year. That is exactly the problem — we have normalised this situation.
 
-I am now completing my master's degree at the **London School of Economics**, and despite the thousands of kilometres between me and Peru, I cannot be indifferent to what is happening back home.
+A report by Punto Final showed schools with crumbling walls, leaking roofs, inadequate sanitation, broken chairs, and blackboards impossible to use. The photographs in that report stopped me (I included some of them here). My first thought was: how do we speak of a more equal country, with the same rights for everyone, when a right as basic as a dignified classroom is not guaranteed for all?
 
-This week, students from public schools returned to class. But under **what conditions**? A recent report from *Punto Final* shows schools in Lima — our capital city — with crumbling walls, leaking roofs, inadequate sanitation, and classrooms unfit for learning. These are not only schools in remote rural areas. These are schools in Lima.
 
-Evidence from reforms such as **extended school hours (Jornada Escolar Completa)** consistently shows that infrastructure quality is directly linked to learning outcomes. You cannot extend the school day if the building itself is falling apart.
+## An Electoral Moment and a Collective Responsibility
 
-> What are these children supposed to learn in these conditions?
+In seven days, Peru faces a general election. With around 38 presidential candidates, it is not difficult to find one who says they will invest in education. Those words cost nothing.
 
-## An Electoral Moment We Cannot Waste
+The real questions are harder:
 
-In less than a month, Peru faces a **general election with around 38 presidential candidates**. It is not enough to hear candidates say *"we will invest in education"*. Those words cost nothing. The real questions are:
+  - How will they invest, and in what specifically?
 
-- **How** will they invest, and in what specifically?
-- Do they have a realistic, costed, and feasible plan for school infrastructure?
-- Who are the technical teams that would actually implement these plans?
-- Have these candidates held public office before — and what did they do when they had the chance?
+  - Do they have a realistic, costed, and feasible plan for school infrastructure?
 
-The reports from the **Contraloría General de la República** document in detail the current state of school infrastructure across the country. This is not opinion. This is the government's own audit body telling us the truth.
+  - Who are the technical teams that would actually implement these plans?
 
-## The Bridge We Still Need to Build
+  - Have these candidates held public office before — and what did they do when they had the chance?
 
-As Jaime Saavedra has written, the Peruvian state continues arriving too late for some children. In too many cases, it never arrives at all. The bridge between academia and policy implementation is not just feasible — it is **necessary**. But it requires political will, institutional continuity, and the courage to put children — not electoral cycles — at the centre of every decision.
+The scenario, honestly, feels disheartening. But in this week of electoral silence, each of us carries a responsibility: to make visible, within our communities, the information that is available. Not to tell people who to vote for. But perhaps to help each other be clear about who not to vote for and why. This is not about your political preferences (left, moderate or right side). It is a question of what thousands of students are still waiting for.
 
+Closing the education gap is a political commitment that millions of children and young people are still waiting for. The government cannot keep arriving late for new generations.
 
 ---
-*Sources: Punto Final report on school infrastructure (March 2026); Contraloría General de la República school audit reports; Young Lives longitudinal study; Saavedra, J. — referenced work on Peruvian education policy.*
+## Photographs
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="/images/colegio1.jpg" width="48%" alt="School conditions in Peru">
+  <img src="/images/colegio4.jpg" width="48%" alt="School conditions in Peru">
+  <img src="/images/colegio5.jpg" width="48%" alt="School conditions in Peru">
+  <img src="/images/colegio6.jpg" width="48%" alt="School conditions in Peru">
+</div>
+
+---
+## References
+
+Agüero, J., Favara, M., Porter, C., & Sánchez, A. (forthcoming). "Do More School Resources Increase Learning Outcomes? Evidence from a Comprehensive Education Reform in Peruvian Secondary Schools." *Journal of Human Resources*. Available at: [LINK AL PAPER]
+
+Punto Final (2026, March). *¿En estas aulas aprenden los niños peruanos?: Así están los colegios del Perú* [Video report and photographs]. Latina Televisión. Available at: [https://www.youtube.com/watch?v=wjlIYga53aU](https://www.youtube.com/watch?v=wjlIYga53aU)
+
+*Photographs included in this article are taken from the Punto Final report (March 2026) and are used for informational and non-commercial purposes.*
