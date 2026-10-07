@@ -11,7 +11,7 @@
   color: #dc7e13;
   line-height: 1.6;
   /* we want a white page, that's centered and not too wide */
-  background-color: #fff;
+  background-color: transparent;
   margin:0 auto;
   max-width: 800px;
   padding-top: 60px;
