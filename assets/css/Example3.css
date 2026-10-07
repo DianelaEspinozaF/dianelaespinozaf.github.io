@@ -8,7 +8,7 @@
   /* We want text that uses a clean sans-serif font, is usually 16px big and close to black */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #dc7e13;
+  color: inherit;
   line-height: 1.6;
   /* we want a white page, that's centered and not too wide */
   background-color: transparent;
