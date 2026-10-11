@@ -97,6 +97,19 @@ share: false
      </section>
 
 
+     <section>
+          <div class="chart-description">
+               <h2>Section 4: A fourth chart</h2>
+               <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                    Debt interest and GDP actual and forecasted values.
+               </p>
+          </div>
+
+          <!-- This element will contain our vega-lite chart -->
+          <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
+     </section>
+
      <!-- This is a script, it's a way to run JavaScript code on the page -->
      <script>
           let chart = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json";
@@ -107,5 +120,8 @@ share: false
 
           let chart3 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/library/chartClassExample2_8.json";
           vegaEmbed('#Location3', chart3);
+
+          let chart4 = "/assets/charts/wk1_chart2.json";
+          vegaEmbed('#Location4', chart4);          
      </script>
 </div>

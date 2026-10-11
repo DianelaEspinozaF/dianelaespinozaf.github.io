@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data":{"url": "https://raw.githubusercontent.com/DianelaEspinozaF/dianelaespinozaf.github.io/refs/heads/master/assets/charts/GASDESW.csv"},
+  "mark": "line",
+  "title": {
+    "text": "US Diesel Sales Price",
+    "anchor": "start",
+    "subtitle": ["Source: U.S. Energy Information Administration via FRED"],
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "color": "#2d2323",
+    "subtitleColor": "#000000"
+  },
+  "width": 600,
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": "",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "title": ""
+      }
+    }
+  }
+}
