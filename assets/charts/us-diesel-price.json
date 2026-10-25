@@ -12,6 +12,7 @@
     "subtitleColor": "#000000"
   },
   "width": 600,
+  "background": "transparent",
   "encoding": {
     "x": {
       "field": "date",
