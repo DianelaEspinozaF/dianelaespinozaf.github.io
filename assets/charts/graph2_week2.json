@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "title": {
+    "text": "USA: Exports of Goods and Services",
+    "anchor": "start",
+    "subtitle": ["Billions of US dollars","Source: FRED through ECO API"
+    ],
+    "fontSize": "14",
+    "subtitleFontSize": "10"
+    },
+  "data": {
+    "url": "https://api.economicsobservatory.com/usa/expo?vega"
+  },
+  "mark": {
+    "type": "area",
+    "line": {
+      "color": "darkgreen"
+    },
+    "color": {
+      "x1": 1,
+      "y1": 1,
+      "x2": 1,
+      "y2": 0,
+      "gradient": "linear",
+      "stops": [
+        {
+          "offset": 0,
+          "color": "white"
+        },
+        {
+          "offset": 1,
+          "color": "darkgreen"
+        }
+      ]
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative"
+    }
+  }
+}

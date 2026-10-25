@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "title": {
+    "text": "Nigeria: Unemployment Rate",
+    "anchor": "start",
+    "subtitle": [
+      "Source: NBS (WB) through ECO API"
+    ],
+    "fontSize": 14,
+    "subtitleFontSize": 12
+  },
+  "height": 250,
+  "width": 600,
+  "data": {
+    "url": "https://api.economicsobservatory.com/nga/unem?vega",
+    "format": {
+      "type": "json"
+    }
+  },
+  "params": [
+    {
+      "name": "highlight",
+      "select": {"type": "point", "on": "pointerover"}
+    },
+    {"name": "select", "select": "point"}
+  ],
+  "mark": {
+  "type": "bar",
+  "size": 10,
+  "fill": "#705891",
+  "stroke": "black"
+  },
+  "encoding": {
+    "tooltip": [
+  {
+    "field": "date",
+    "type": "temporal",
+    "title": "Year",
+    "format": "%Y"
+  },
+  {
+    "field": "value",
+    "type": "quantitative",
+    "title": "Unemployment rate (%)",
+    "format": ".1f"
+  }
+],
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": "Years",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "title": "Percentage",
+        "grid": false
+      }
+    },
+    "fillOpacity": {
+      "condition": {"param": "select", "value": 1},
+      "value": 0.3
+    },
+    "strokeWidth": {
+      "condition": [
+        {
+          "param": "select",
+          "empty": false,
+          "value": 2
+        },
+        {
+          "param": "highlight",
+          "empty": false,
+          "value": 1
+        }
+      ],
+      "value": 0
+    }
+  }
+}

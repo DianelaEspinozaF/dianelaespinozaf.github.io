@@ -1,6 +1,6 @@
 ---
 title: "Week 2"
-excerpt: "My own graphs"
+excerpt: "CC2. Building. Create your own visualisations"
 collection: portfolio
 permalink: /portfolio/week-02/
 share: false
@@ -46,13 +46,13 @@ share: false
      <!-- The body tag contains the elements that visitors to our page will see. -->
      <h3 class="small">
           <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-          Creating my own charts using information from the Federal Reserve Economic Data(FRED) and from the InterAmerican Development Bank (IDB) - CIMA.
+          Creating my own charts using information from the Federal Reserve Economic Data(FRED) and from the Economics Observatory Data Hub.
      </h3>
 
      <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
      <section>
           <div class="chart-description">
-               <h2>Section 1: A basic chart</h2>
+               <h2>Section 1: Class example using information from FRED</h2>
                <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                     Diesel prices in US.
                </p>
@@ -63,15 +63,9 @@ share: false
 
      </section>
 
-     <!-- Do you want to add more sections? -->
-     <!-- Try copying pasting the section above -->
-     <!-- You'll need to change the id of the figure "<figure id="Location2"... -->
-     <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
-
-     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
      <section>
           <div class="chart-description">
-               <h2>Section 2: A second chart</h2>
+               <h2>Section 2: First challenge graph - week 2</h2>
                <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                     Evolution of university completion rate in Latin America countries.
                </p>
@@ -82,9 +76,10 @@ share: false
 
      </section>
 
-          <section>
+
+     <section>
           <div class="chart-description">
-               <h2>Section 3: A third chart</h2>
+               <h2>Section 3: Second challenge graph - week 2</h2>
                <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                     Evolution of university completion rate in Latin America countries.
                </p>
@@ -100,11 +95,11 @@ share: false
           let chart1 = "/assets/charts/us-diesel-price.json";
           vegaEmbed('#Location1', chart1);  
 
-          let chart2 = "/assets/charts/university_completion_rate.json";
-          vegaEmbed('#Location2', chart2);        
+          let chart2 = "/assets/charts/graph1_week2.json";
+          vegaEmbed('#Location2', chart2)
 
-          let chart3 = "https://raw.githubusercontent.com/worldbank/open-api-specs/refs/heads/main/Data360%20Open_API.json";
-          vegaEmbed('#Location3', chart3)
+          let chart3 = "/assets/charts/graph2_week2.json";
+          vegaEmbed('#Location3', chart3);
           
      </script>
 </div>
