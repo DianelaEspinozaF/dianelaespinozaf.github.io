@@ -8,6 +8,7 @@
     "fontSize": "14",
     "subtitleFontSize": "10"
     },
+  "background": "transparent",
   "data": {
     "url": "https://api.economicsobservatory.com/usa/expo?vega"
   },

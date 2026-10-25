@@ -11,6 +11,7 @@
   },
   "height": 250,
   "width": 600,
+  "background": "transparent",
   "data": {
     "url": "https://api.economicsobservatory.com/nga/unem?vega",
     "format": {

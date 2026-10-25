@@ -1,7 +1,54 @@
 ---
 title: "Week 3"
-excerpt: "Display graphs in the website"
+excerpt: "CC3. Policy debate. Use a visualisation in policy commentary"
 collection: portfolio
 permalink: /portfolio/week-03/
 share: false
 ---
+
+<!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
+<!-- Try swapping to example3.css or another, and take a look at each example.css to see if you understand it-->
+<link rel="stylesheet" type="text/css" href="/assets/css/Example3.css">
+
+<!-- This is a link to the vega-lite packages which we're using to make graphs -->
+<script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@7.3.0"></script>
+
+<style>
+     /* CSS styles can be defined here, or in a separate CSS file */
+     #chartGrid {
+          display: flex;
+     }
+</style>
+
+
+<div class="portfolio-week week-03">
+     <!-- The body tag contains the elements that visitors to our page will see. -->
+     <h3 class="small">
+          <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+          The widespread availability of internet access could facilitate the adoption of artificial intelligence as a tool to address the learning crisis.
+     </h3>
+
+     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
+     <section>
+          <div class="chart-description">
+               <h2>Graph 1: Internet Use Has Expanded Worldwide, 2000–2024 </h2>
+               <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                    
+               </p>
+          </div>
+
+          <!-- This element will contain our vega-lite chart -->
+          <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
+     </section>
+
+
+     <!-- This is a script, it's a way to run JavaScript code on the page -->
+     <script>
+          let chart1 = "/assets/charts/graph1_week3.json";
+          vegaEmbed('#Location1', chart1)
+          
+     </script>
+</div>

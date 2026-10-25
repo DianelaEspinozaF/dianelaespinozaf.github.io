@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Internet use over time",
+    "subtitle": [
+      "Population (%)",
+      "Source: World Bank, World Development Indicators"
+    ],
+    "anchor": "start"
+  },
+  "width": 900,
+  "height": 500,
+  "background": "transparent",
+  "params": [
+    {
+      "name": "projection",
+      "value": "equalEarth"
+    },
+    {
+      "name": "selectedYear",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 2024,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://api.worldbank.org/v2/country/all/indicator/IT.NET.USER.ZS?format=json&per_page=20000",
+    "format": {
+      "type": "json",
+      "property": "[1]"
+    }
+  },
+  "transform": [
+    {
+      "filter": "toNumber(datum.date) == selectedYear"
+    },
+    {
+      "calculate": "datum.value",
+      "as": "access"
+    },
+    {
+      "calculate": "datum.date",
+      "as": "year"
+    },
+    {
+      "lookup": "countryiso3code",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/datasets/country-codes/master/data/country-codes.csv",
+          "format": {
+            "type": "csv",
+            "parse": {
+              "ISO3166-1-numeric": "number"
+            }
+          }
+        },
+        "key": "ISO3166-1-Alpha-3",
+        "fields": [
+          "ISO3166-1-numeric"
+        ]
+      },
+      "as": [
+        "mapId"
+      ]
+    },
+    {
+      "lookup": "mapId",
+      "from": {
+        "data": {
+          "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
+          "format": {
+            "type": "topojson",
+            "feature": "countries"
+          }
+        },
+        "key": "id"
+      },
+      "as": "geo"
+    },
+    {
+      "filter": "isValid(datum.geo)"
+    }
+  ],
+  "projection": {
+    "type": {
+      "expr": "projection"
+    }
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "gray",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "shape": {
+      "field": "geo",
+      "type": "geojson"
+    },
+    "color": {
+      "condition": {
+        "test": "isValid(datum.access)",
+        "field": "access",
+        "type": "quantitative",
+        "scale": {
+          "domain": [
+            0,
+            100
+          ],
+          "scheme": "viridis"
+        },
+        "legend": {
+          "title": "Population (%)"
+        }
+      },
+      "value": "lightgray"
+    },
+    "tooltip": [
+      {
+        "field": "country.value",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "year",
+        "type": "nominal",
+        "title": "Year"
+      },
+      {
+        "field": "access",
+        "type": "quantitative",
+        "title": "Internet access (%)",
+        "format": ".1f"
+      }
+    ]
+  }
+}
