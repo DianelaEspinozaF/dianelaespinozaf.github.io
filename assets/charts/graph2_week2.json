@@ -38,7 +38,10 @@
   "encoding": {
     "x": {
       "field": "date",
-      "type": "temporal"
+      "type": "temporal",
+      "axis": {
+        "title": "Years"
+      }
     },
     "y": {
       "field": "value",
