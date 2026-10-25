@@ -5,9 +5,9 @@ category: manuscripts
 permalink: /publication/2024-growing-juntos
 excerpt: "Evaluates the long-term impacts of Peru's conditional cash transfer programme (JUNTOS) on human capital and family formation outcomes using propensity score matching on 2,000+ Young Lives participants."
 date: 2025-01-01
-venue: 'Under review at Economic Development and Cultural Change'
+venue: ''
 #paperurl: ''
-citation: "Espinoza, D., Woodman, A., & Sánchez, A. (under review). Growing JUNTOS: Long-Term Impacts of Peru's Conditional Cash Transfer Programme on Human Capital. <i>Economic Development and Cultural Change</i>."
+citation: "Woodman, A., Espinoza, D., & Sánchez, A. (Working Paper). Growing JUNTOS: Long-Term Impacts of Peru's Conditional Cash Transfer Programme on Human Capital."
 ---
 
 This paper evaluates whether Peru's conditional cash transfer programme (JUNTOS) impacts long-term human capital and family formation outcomes using propensity score matching on longitudinal data (2006-2023) from 2,000+ Young Lives participants.
