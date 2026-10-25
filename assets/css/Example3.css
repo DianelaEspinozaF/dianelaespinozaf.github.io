@@ -66,6 +66,12 @@
   height: auto;
 }
 
-.portfolio-week .vega-bind input[type="range"] {
-  accent-color: #8064a2;
+.portfolio-week input[type="range"] {
+  accent-color: #8064a2 !important;
+}
+
+.portfolio-week .intro-text {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.5;
 }
