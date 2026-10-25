@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "University completion rate by country",
+    "subtitle": "Source: CIMA",
+    "anchor": "start"
+  },
+  "width": 600,
+  "height": 350,
+  "data": {
+    "url": "https://raw.githubusercontent.com/DianelaEspinozaF/dianelaespinozaf.github.io/refs/heads/master/assets/charts/completion-rate-by-education-level-filtered-data-2026-10-11.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "value": "number"
+      }
+    }
+  },
+  "mark": {
+    "type": "line",
+    "point": true,
+    "invalid": "break-paths-show-domains"
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "scale": {"zero": false},
+      "axis": {"format": "d", "tickMinStep": 1}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Completion rate",
+      "axis": {"format": ".0%"}
+    },
+    "color": {
+      "field": "country_code",
+      "type": "nominal",
+      "title": "Country / region",
+      "scale": {"scheme": "tableau10"}
+    },
+    "order": {
+      "field": "year",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {"field": "country_code", "title": "Country / region"},
+      {"field": "year", "type": "quantitative", "format": "d"},
+      {"field": "value", "type": "quantitative", "format": ".1%"}
+    ]
+  }
+}
