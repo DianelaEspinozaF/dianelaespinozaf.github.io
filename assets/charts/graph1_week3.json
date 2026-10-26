@@ -111,7 +111,8 @@
             0,
             100
           ],
-          "scheme": "viridis"
+          "scheme": "viridis",
+          "reverse": true
         },
         "legend": {
           "title": "Population (%)"
