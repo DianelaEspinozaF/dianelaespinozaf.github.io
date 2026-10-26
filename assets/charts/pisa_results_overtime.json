@@ -1,0 +1,181 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Learning outcomes among the countries that took the exam",
+    "subtitle": [
+      "Students below proficiency Level 2 (%)",
+      "Source: OECD, PISA"
+    ],
+    "anchor": "start"
+  },
+  "width": 800,
+  "height": 450,
+  "background": "transparent",
+  "params": [
+    {
+      "name": "selectedSubject",
+      "value": "mathematics",
+      "bind": {
+        "input": "select",
+        "options": [
+          "mathematics",
+          "reading",
+          "science"
+        ],
+        "labels": [
+          "Mathematics",
+          "Reading",
+          "Science"
+        ],
+        "name": "Subject: "
+      }
+    },
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [
+          2000,
+          2003,
+          2006,
+          2009,
+          2012,
+          2015,
+          2018,
+          2022,
+          2025
+        ],
+        "name": "Year: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/DianelaEspinozaF/dianelaespinozaf.github.io/refs/heads/master/assets/charts/pisa_final_data.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "mathematics_below_level_2_pct": "number",
+        "reading_below_level_2_pct": "number",
+        "science_below_level_2_pct": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year == selectedYear"
+    },
+    {
+      "calculate": "datum[selectedSubject + '_below_level_2_pct']",
+      "as": "lowPerformers"
+    },
+    {
+      "calculate": "selectedSubject",
+      "as": "subject"
+    },
+    {
+      "lookup": "iso3",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/datasets/country-codes/master/data/country-codes.csv",
+          "format": {
+            "type": "csv",
+            "parse": {
+              "ISO3166-1-numeric": "number"
+            }
+          }
+        },
+        "key": "ISO3166-1-Alpha-3",
+        "fields": [
+          "ISO3166-1-numeric",
+          "CLDR display name"
+        ]
+      },
+      "as": [
+        "mapId",
+        "countryName"
+      ]
+    },
+    {
+      "lookup": "mapId",
+      "from": {
+        "data": {
+          "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
+          "format": {
+            "type": "topojson",
+            "feature": "countries"
+          }
+        },
+        "key": "id"
+      },
+      "as": "geo"
+    },
+    {
+      "filter": "isValid(datum.geo)"
+    }
+  ],
+  "projection": {
+    "type": "equalEarth"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "#ffffff",
+    "strokeWidth": 0.7
+  },
+  "encoding": {
+    "shape": {
+      "field": "geo",
+      "type": "geojson"
+    },
+    "color": {
+      "condition": {
+        "test": "isValid(datum.lowPerformers)",
+        "field": "lowPerformers",
+        "type": "quantitative",
+        "scale": {
+          "domain": [
+            0,
+            100
+          ],
+          "scheme": "cividis",
+          "reverse": true
+        },
+        "legend": {
+          "title": "Below Level 2 (%)",
+          "orient": "bottom",
+          "direction": "horizontal"
+        }
+      },
+      "value": "#d9d9d9"
+    },
+    "tooltip": [
+      {
+        "field": "countryName",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "year",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      {
+        "field": "subject",
+        "type": "nominal",
+        "title": "Subject"
+      },
+      {
+        "field": "lowPerformers",
+        "type": "quantitative",
+        "title": "Below Level 2 (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

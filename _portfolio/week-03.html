@@ -44,11 +44,26 @@ share: false
 
      </section>
 
+     <section>
+          <div class="chart-description">
+               <h2>Graph 2: Living in a learning crisis </h2>
+               <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                    
+               </p>
+          </div>
+
+          <!-- This element will contain our vega-lite chart -->
+          <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
+     </section>
 
      <!-- This is a script, it's a way to run JavaScript code on the page -->
      <script>
           let chart1 = "/assets/charts/graph1_week3.json";
-          vegaEmbed('#Location1', chart1)
+          vegaEmbed('#Location1', chart1);
+
+          let chart2 = "/assets/charts/pisa_results_overtime.json";
+          vegaEmbed('#Location2', chart2);
           
      </script>
 </div>
