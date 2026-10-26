@@ -232,7 +232,7 @@
       "mark": {
         "type": "rule",
         "color": "#333333",
-        "strokeWidth": 0.8,
+        "strokeWidth": 0.8
       },
       "encoding": {
         "x": {
