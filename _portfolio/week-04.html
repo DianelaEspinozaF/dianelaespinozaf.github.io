@@ -1,7 +1,74 @@
 ---
 title: "Week 4"
-excerpt: "Display graphs in the website"
+excerpt: "CC4. Replication. Re-create, then improve, someone else’s chart."
 collection: portfolio
 permalink: /portfolio/week-04/
 share: false
 ---
+<!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
+<!-- Try swapping to example3.css or another, and take a look at each example.css to see if you understand it-->
+<link rel="stylesheet" type="text/css" href="/assets/css/Example3.css">
+
+<!-- This is a link to the vega-lite packages which we're using to make graphs -->
+<script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@7.3.0"></script>
+
+<style>
+     /* CSS styles can be defined here, or in a separate CSS file */
+     #chartGrid {
+          display: flex;
+     }
+</style>
+
+
+<div class="portfolio-week week-03">
+     <!-- The body tag contains the elements that visitors to our page will see. -->
+    <figure>
+    <img
+     src="/assets/charts/world_bank_chart_2017.png"
+     alt="Original World Bank chart"
+     style="max-width: 100%; height: auto;"
+    >
+    <figcaption>
+        Original chart — World Bank Annual Report 2017.
+    </figcaption>
+    </figure>
+
+     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
+     <section>
+          <div class="chart-description">
+               <h2>Graph 1: Internet use has expanded worldwide, 2000–2024 </h2>
+               <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                    
+               </p>
+          </div>
+
+          <!-- This element will contain our vega-lite chart -->
+          <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
+     </section>
+
+     <section>
+          <div class="chart-description">
+               <h2>Graph 2: Living in a learning crisis </h2>
+               <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                    
+               </p>
+          </div>
+
+          <!-- This element will contain our vega-lite chart -->
+          <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
+     </section>
+
+     <!-- This is a script, it's a way to run JavaScript code on the page -->
+     <script>
+          let chart1 = "/assets/charts/graph1_week3.json";
+          vegaEmbed('#Location1', chart1);
+
+          let chart2 = "/assets/charts/pisa_results_overtime.json";
+          vegaEmbed('#Location2', chart2);
+          
+     </script>
+</div>

@@ -1,0 +1,403 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 700,
+  "height": 350,
+  "background": "white",
+  "title": {
+    "text": "IBRD AND IDA LENDING BY SECTOR · FISCAL 2017",
+    "subtitle": "SHARE OF TOTAL OF $5.9 BILLION",
+    "anchor": "start",
+    "fontSize": 16,
+  },
+  "data": {
+    "values": [
+      {
+        "sector": "Agriculture, Fishing,\nand Forestry",
+        "value": 6,
+        "position": 1,
+        "color": "#b6ad84",
+        "side": "right",
+        "lineStart": 367,
+        "lineEnd": 690,
+        "lineY": 50,
+        "connectorY": 72
+      },
+      {
+        "sector": "Education",
+        "value": 10,
+        "position": 2,
+        "color": "#a1b653",
+        "side": "right",
+        "lineStart": 420,
+        "lineEnd": 690,
+        "lineY": 95
+      },
+      {
+        "sector": "Energy and Extractives",
+        "value": 9,
+        "position": 3,
+        "color": "#67a16b",
+        "side": "right",
+        "lineStart": 451,
+        "lineEnd": 690,
+        "lineY": 150
+      },
+      {
+        "sector": "Financial Sector",
+        "value": 4,
+        "position": 4,
+        "color": "#66aeaf",
+        "side": "right",
+        "lineStart": 452,
+        "lineEnd": 690,
+        "lineY": 175
+      },
+      {
+        "sector": "Health",
+        "value": 4,
+        "position": 5,
+        "color": "#4185a0",
+        "side": "right",
+        "lineStart": 449,
+        "lineEnd": 690,
+        "lineY": 200
+      },
+      {
+        "sector": "Industry, Trade,\nand Services",
+        "value": 11,
+        "position": 6,
+        "color": "#8cbfc1",
+        "side": "right",
+        "lineStart": 412,
+        "lineEnd": 690,
+        "lineY": 252
+      },
+      {
+        "sector": "Information and\nCommunications Technologies",
+        "value": 2,
+        "position": 7,
+        "color": "#b3a079",
+        "side": "right",
+        "lineStart": 388,
+        "lineEnd": 690,
+        "lineY": 302,
+        "connectorY": 265
+      },
+      {
+        "sector": "Public Administration",
+        "value": 32,
+        "position": 8,
+        "color": "#d2c153",
+        "side": "left",
+        "lineStart": 330,
+        "lineEnd": 5,
+        "lineY": 302,
+        "connectorY": 270
+      },
+      {
+        "sector": "Social Protection",
+        "value": 3,
+        "position": 9,
+        "color": "#d48c2a",
+        "side": "left",
+        "lineStart": 246,
+        "lineEnd": 5,
+        "lineY": 150
+      },
+      {
+        "sector": "Transportation",
+        "value": 10,
+        "position": 10,
+        "color": "#972844",
+        "side": "left",
+        "lineStart": 263,
+        "lineEnd": 5,
+        "lineY": 110
+      },
+      {
+        "sector": "Water, Sanitation,\nand Waste Management",
+        "value": 11,
+        "position": 11,
+        "color": "#df4432",
+        "side": "left",
+        "lineStart": 334,
+        "lineEnd": 5,
+        "lineY": 50,
+        "connectorY": 72
+      }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.value + '%'",
+      "as": "percentageLabel"
+    }
+  ],
+  "layer": [
+    {
+      "transform": [
+        {
+          "stack": "value",
+          "groupby": [],
+          "sort": [
+            {
+              "field": "position",
+              "order": "ascending"
+            }
+          ],
+          "offset": "normalize",
+          "as": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "calculate": "datum.start * 2 * PI",
+          "as": "startAngle"
+        },
+        {
+          "calculate": "datum.end * 2 * PI",
+          "as": "endAngle"
+        }
+      ],
+      "mark": {
+        "type": "arc",
+        "outerRadius": 100
+      },
+      "encoding": {
+        "x": {
+          "value": 350
+        },
+        "y": {
+          "value": 170
+        },
+        "theta": {
+          "field": "startAngle",
+          "type": "quantitative",
+          "scale": null,
+          "stack": null
+        },
+        "theta2": {
+          "field": "endAngle"
+        },
+        "color": {
+          "field": "color",
+          "type": "nominal",
+          "scale": null,
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "sector",
+            "title": "Sector"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Reported share (%)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#3f3a3af8",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "x": {
+          "field": "lineStart",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        },
+        "x2": {
+          "field": "lineEnd"
+        },
+        "y": {
+          "field": "lineY",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "isValid(datum.connectorY)"
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "color": "#333333",
+        "strokeWidth": 0.8,
+      },
+      "encoding": {
+        "x": {
+          "field": "lineStart",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        },
+        "y": {
+          "field": "connectorY",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        },
+        "y2": {
+          "field": "lineY"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.side == 'right'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "dy": -5,
+        "font": "Arial",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "lineBreak": "\n",
+        "lineHeight": 14,
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "lineEnd",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        },
+        "y": {
+          "field": "lineY",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        },
+        "text": {
+          "field": "sector"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.side == 'left'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dy": -5,
+        "font": "Arial",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "lineBreak": "\n",
+        "lineHeight": 14,
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "lineEnd",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        },
+        "y": {
+          "field": "lineY",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        },
+        "text": {
+          "field": "sector"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.side == 'right'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": 2,
+        "dy": -5,
+        "font": "Arial",
+        "fontSize": 15,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "lineStart",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        },
+        "y": {
+          "field": "lineY",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        },
+        "text": {
+          "field": "percentageLabel"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.side == 'left'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "dx": -2,
+        "dy": -5,
+        "font": "Arial",
+        "fontSize": 15,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "lineStart",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        },
+        "y": {
+          "field": "lineY",
+          "type": "quantitative",
+          "scale": null,
+          "axis": null
+        },
+        "text": {
+          "field": "percentageLabel"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
