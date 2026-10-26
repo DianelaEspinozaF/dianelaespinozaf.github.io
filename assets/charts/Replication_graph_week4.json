@@ -185,18 +185,7 @@
           "type": "nominal",
           "scale": null,
           "legend": null
-        },
-        "tooltip": [
-          {
-            "field": "sector",
-            "title": "Sector"
-          },
-          {
-            "field": "value",
-            "type": "quantitative",
-            "title": "Reported share (%)"
-          }
-        ]
+        }
       }
     },
     {

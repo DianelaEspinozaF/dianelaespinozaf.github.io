@@ -108,19 +108,6 @@
         "type": "bar",
         "color": "#8064a2",
         "size": 20
-      },
-      "encoding": {
-        "tooltip": [
-          {
-            "field": "sector",
-            "title": "Sector"
-          },
-          {
-            "field": "value",
-            "type": "quantitative",
-            "title": "Share (%)"
-          }
-        ]
       }
     },
     {
