@@ -134,7 +134,7 @@
       {
         "field": "access",
         "type": "quantitative",
-        "title": "Internet access (%)",
+        "title": "Internet use (%)",
         "format": ".1f"
       }
     ]
