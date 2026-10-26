@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Public administration received the largest share of lending",
+    "subtitle": [
+      "IBRD and IDA lending in Latin America and the Caribbean, FY2017",
+      "Share of $5.9 billion (%) | Source: World Bank Annual Report 2017",
+      "Rounded percentages transcribed from the original chart"
+    ],
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitleFontSize": 11
+  },
+  "width": 420,
+  "height": 380,
+  "background": "transparent",
+  "data": {
+    "values": [
+      {
+        "sector": "Agriculture, Fishing, and Forestry",
+        "value": 6
+      },
+      {
+        "sector": "Education",
+        "value": 10
+      },
+      {
+        "sector": "Energy and Extractives",
+        "value": 9
+      },
+      {
+        "sector": "Financial Sector",
+        "value": 4
+      },
+      {
+        "sector": "Health",
+        "value": 4
+      },
+      {
+        "sector": "Industry, Trade, and Services",
+        "value": 11
+      },
+      {
+        "sector": "Information and Communications Technologies",
+        "value": 2
+      },
+      {
+        "sector": "Public Administration",
+        "value": 32
+      },
+      {
+        "sector": "Social Protection",
+        "value": 3
+      },
+      {
+        "sector": "Transportation",
+        "value": 10
+      },
+      {
+        "sector": "Water, Sanitation, and Waste Management",
+        "value": 11
+      }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.value + '%'",
+      "as": "percentageLabel"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "sector",
+      "type": "nominal",
+      "sort": "-x",
+      "axis": {
+        "title": null,
+        "labelLimit": 320,
+        "labelFontSize": 11,
+        "labelPadding": 8,
+        "ticks": false,
+        "domain": false
+      }
+    },
+    "x": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          36
+        ]
+      },
+      "axis": {
+        "title": "Share of total lending (%)",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ],
+        "grid": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#8064a2",
+        "size": 20
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "sector",
+            "title": "Sector"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Share (%)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "fontSize": 12,
+        "color": "black"
+      },
+      "encoding": {
+        "text": {
+          "field": "percentageLabel"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

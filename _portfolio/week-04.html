@@ -40,7 +40,7 @@ share: false
      <section>
           <div class="chart-description">
                <h2>Graph 1: Replication of Worlad Bank Chart </h2>
-               <p> 
+               <p class="intro-text">
                   <strong>Note:</strong> ChatGPT was used to help recreate the lines and labels around the pie chart and approximate the original colours.
                </p>
           </div>
@@ -52,9 +52,10 @@ share: false
 
      <section>
           <div class="chart-description">
-               <h2>Graph 2: Living in a learning crisis </h2>
-               <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                    
+               <h2>Graph 2: Improved Version </h2>
+               <p class="intro-text">
+                   I replaced the first graph with ranked horizontal bars, one colour, 
+                   and added direct percentage labels to make sector comparisons easier.
                </p>
           </div>
 
@@ -68,7 +69,7 @@ share: false
           let chart1 = "/assets/charts/Replication_graph_week4.json";
           vegaEmbed('#Location1', chart1);
 
-          let chart2 = "/assets/charts/pisa_results_overtime.json";
+          let chart2 = "/assets/charts/chart_improvements.json";
           vegaEmbed('#Location2', chart2);
           
      </script>
