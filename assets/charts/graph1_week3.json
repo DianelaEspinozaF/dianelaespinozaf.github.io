@@ -13,10 +13,6 @@
   "background": "transparent",
   "params": [
     {
-      "name": "projection",
-      "value": "equalEarth"
-    },
-    {
       "name": "selectedYear",
       "value": 2024,
       "bind": {
@@ -87,9 +83,7 @@
     }
   ],
   "projection": {
-    "type": {
-      "expr": "projection"
-    }
+    "type":  "equalEarth"
   },
   "mark": {
     "type": "geoshape",
@@ -113,9 +107,6 @@
           ],
           "scheme": "viridis",
           "reverse": true
-        },
-        "legend": {
-          "title": "Population (%)"
         }
       },
       "value": "lightgray"
